@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Raleway:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anaheim&display=swap" rel="stylesheet">
+  <title>Petshop - Banho e Tosa</title>
+</head>
+<body>
+  <header>
+    <img class="logo" src="/assets/images/logo.svg" alt="logo">
+    <h1 class="title">Agendamento banho e tosa</h1>
+  </header>
+  <section id="section-form">
+    <div id="form">
+      <form onsubmit="addPet()">
+        <label for="petName">Nome do Pet*</label>
+        <input type="text" autocomplete="off" id="fname" name="petName" required>
+
+        <label for="petBreed">Raça*</label>
+        <input type="text" autocomplete="off" id="fbreed" name="petBreed" required>
+
+        <label for="petOwner">Dono do Pet*</label>
+        <input type="text" autocomplete="off" id="fowner" name="petOwner" required>
+
+        <label for="petPhone">Telefone*</label>
+        <input style="margin-bottom: 1rem" type="text" autocomplete="off" id="fphone" name="petPhone" required>
+
+        <button class="submit-btn" type="submit">Agendar Pet</button>
+      </form>
+    </div>
+
+    <div>
+
+      <table id="dataTable">
+        <tr>
+          <th>ID</th>
+          <th>Nome do Pet</th>
+          <th>Raça</th>
+          <th>Dono do Pet</th>
+          <th>Telefone</th>
+          <th>Remover</th>
+        </tr>
+      </table>
+
+    </div>
+
+
+  </section>
+<script src="/assets/js/script.js"></script>
+</body>
+</html>
